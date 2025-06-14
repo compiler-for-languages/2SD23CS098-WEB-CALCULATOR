@@ -1,0 +1,75 @@
+<html>
+    <head><title>SKG Web Developers ltd.</title>
+    
+<script type="text/javascript" src="calculation.js">  //refers source file for javascript functions
+
+</script>
+
+
+<style>
+    button
+    {
+        font-family:Impact;
+        height:55px;
+        width:65px;
+        margin:2px;
+        background-color:wheat;
+        color:red;
+        font-size:28;
+        border-radius:40%; 
+
+    }
+    .specialbutton
+    {
+         font-family:Impact;
+        height:120px;
+        width:70px;
+        margin:2px;
+        background-color:crimson;
+        color:black;
+        font-size:30;
+
+    }
+
+    #display{
+        height:60px;
+        font-size:40px;
+        font-family:Impact;
+        color:green;
+        width:320px;
+    }
+
+    .design{
+         font-size:40px;
+        font-family:Impact;
+        color:grey;
+    }
+</style>
+    
+    </head>
+    <body>
+
+        <!--display screen reverse tech-->
+        <br>
+    <center> <h1 class="design">The Arithmetic Problem Solver </h1>
+        <br><br> 
+        <input type="text" id="display" size="24" readonly> <!--readonly bcoz cant give input only java will modify this-->
+        <br>
+
+
+<!--buttons-->
+        
+            <table border="1">
+                <tr><td><button onclick="press('1')" >1</button></td> <td><button onclick="press('2')">2</button></td> <td><button onclick="press('3')">3</button></td><td><button onclick="press('4')">4</button></td></tr>
+<tr><td><button onclick="press('5')">5</button></td><td><button onclick="press('6')">6</button></td><td><button onclick="press('7')">7</button></td><td><button onclick="press('8')">8</button></td></tr>
+<tr><td><button onclick="press('9')"> 9</button></td><td><button onclick="press('0')">0</button></td><td><button onclick="press('+')">+</button></td><td><button onclick="clearall()">CLR</button></td></tr>
+<tr><td><button onclick="press('-')">-</button></td><td><button onclick="press('*')">*</button></td><td><button onclick="press('/')">/</button></td><td><button onclick="turnoff()">OFF</button></td></tr>
+<tr><td><button class="specialbutton">S</button></td> <td><button class="specialbutton">K</button></td> <td><button class="specialbutton" onclick="delstep()">del</button></td><td><button class="specialbutton" onclick="calculate()">=</button></td></tr>
+            </table>
+        
+        <br><br>
+        <p style="font-family:Georgia; font-size:30px; color:grey;">Powered by SKG</p>
+        </center>
+
+    </body>
+</html>
